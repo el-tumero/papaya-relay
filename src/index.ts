@@ -49,7 +49,7 @@ io.use((socket, next) => {
 
 io.on("connection", socket => {
 
-    console.log(`Address ${socket.handshake.auth.address} connected!`)
+    // console.log(`Address ${socket.handshake.auth.address} connected!`)
     connectedAddresses.push(socket.handshake.auth.address)
 
     socket.on("message", (data:IMessageData) => {
